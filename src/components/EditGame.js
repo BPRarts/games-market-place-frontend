@@ -24,7 +24,7 @@ const EditGame = () => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/oneGame/${id}`)
+        axios.get(`https://games-market-place-backend.onrender.com/api/oneGame/${id}`)
             .then((res) => {
                 console.log(res);
                 setGame(res.data)
@@ -39,7 +39,7 @@ const EditGame = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:8000/api/updateGame/${id}`, game)
+        axios.put(`https://games-market-place-backend.onrender.com/api/updateGame/${id}`, game)
             .then((res) => {
                 console.log(res);
                 navigate('/')

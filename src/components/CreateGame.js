@@ -24,7 +24,7 @@ const CreateGame = (props) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/newGame', game)
+        axios.post('https://games-market-place-backend.onrender.com/api/newGame', game)
              .then((res) => {
                 console.log(res);
              })

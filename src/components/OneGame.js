@@ -10,7 +10,7 @@ const OneGame = (props) => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/oneGame/${id}`)
+        axios.get(`https://games-market-place-backend.onrender.com/api/oneGame/${id}`)
             .then((res) => {
                 console.log(res);
                 setOneGame(res.data);
@@ -23,7 +23,7 @@ const OneGame = (props) => {
 
 
     const deleteHandler = (id) => {
-        axios.delete(`http://localhost:8000/api/deleteGame/${id}`)
+        axios.delete(`https://games-market-place-backend.onrender.com/api/deleteGame/${id}`)
             .then((res) => {
                 navigate('/')
             })
