@@ -14,7 +14,7 @@ const PsHome = (props) => {
 
 
     useEffect (() => {
-        axios.get('http://localhost:8000/api/allGames')
+        axios.get('https://games-market-place-backend.onrender.com/api/allGames')
             .then((res) => {
                 console.log(res);
                 setAllGames(res.data)
