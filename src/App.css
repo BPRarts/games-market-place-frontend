@@ -190,10 +190,12 @@
 /* xbox homepage */
 .container-2{
   background-image: url(../src/components/images/xbox-back.jpg);
-  background-repeat:repeat;
+  background-repeat:repeat-y;
   background-size: cover;
   background-position: center;
   height: 100vh;
+  
+  
   
   
 }
